@@ -19,10 +19,10 @@ panic = 'abort'
 panic = 'abort'
 
 [dependencies]
-ark-ff = { git = "https://github.com/arkworks-rs/algebra", default-features = false }
-ark-ec = { git = "https://github.com/arkworks-rs/algebra", default-features = false }
-ark-std = { git = "https://github.com/arkworks-rs/utils", default-features = false }
-ark-relations = { git = "https://github.com/arkworks-rs/snark", default-features = false }
+ark-ff = { git = "https://github.com/SRI-CSL/algebra", default-features = false }
+ark-ec = { git = "https://github.com/SRI-CSL/algebra", default-features = false }
+ark-std = { git = "https://github.com/SRI-CSL/utils", default-features = false }
+ark-relations = { git = "https://github.com/SRI-CSL/snark", default-features = false }
 
 derivative = { version = "2", features = ["use_core"] }
 tracing = { version = "0.1", default-features = false, features = [ "attributes" ] }
@@ -30,8 +30,8 @@ num-bigint = {version = "0.3", default-features = false }
 num-traits = {version = "0.2", default-features = false }
 
 [dev-dependencies]
-ark-test-curves = { git = "https://github.com/arkworks-rs/algebra", default-features = false, features = ["bls12_381_scalar_field", "mnt4_753_scalar_field"] }
-ark-poly = { git = "https://github.com/arkworks-rs/algebra", default-features = false }
+ark-test-curves = { git = "https://github.com/SRI-CSL/algebra", default-features = false, features = ["bls12_381_scalar_field", "mnt4_753_scalar_field"] }
+ark-poly = { git = "https://github.com/SRI-CSL/algebra", default-features = false }
 
 [features]
 default = ["std"]
